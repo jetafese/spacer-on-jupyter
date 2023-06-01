@@ -21,6 +21,9 @@ def solve_horn(chc, pp=False, q3=False, gg=True, max_unfold=10, verbosity=0):
 
     # Enable/disable global guidance strategy
     s.set('spacer.global', gg)
+    
+    # adding a trail
+    s.set('spacer.trace_file', '/tmp/spacer.log')
 
     # Disable pre-processing. 
     # Disabling simplifies interpreting results, but it required for many harder instances
